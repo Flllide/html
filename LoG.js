@@ -1,6 +1,9 @@
 
+<script>
 
-document.querySelector('body').innerHTML += `
+
+(function (){
+var bz = `
   <div class="logger"></div> 
   <style>
     .logger span {
@@ -15,27 +18,25 @@ document.querySelector('body').innerHTML += `
       font-weight: 100;
       color: #00ff00;
       overflow:auto;
-      height: 10%;
-      border: solid 1px #415851; 
+      max-height: 15%;
+      border: solid 1px #415851;
+      background: #000;
+      width: 95%;
     }
   </style>
   `;
-var strNumber = 0;
+document.write(bz) 
+})();
+
+var LOGstrNumberLOG = 0;
 this.Log = function(Message) { 
   var LogDiv = document.querySelector('.logger');
   var StorageLogDiv = LogDiv.innerHTML;
-  LogDiv.innerHTML= "<span>"+strNumber+"</span>"+" "+Message +'<br/>' + StorageLogDiv;
-  strNumber++;
+  LogDiv.innerHTML= "<span>"+LOGstrNumberLOG+"</span>"+" "+Message +'<br/>' + StorageLogDiv;
+  LOGstrNumberLOG++;
 }
+Log("____Лог , Добавлен______") ;
 
 
 
-
-
-
-
-
-
-
-
-
+</script> 
