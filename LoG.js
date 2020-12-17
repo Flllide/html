@@ -1,7 +1,3 @@
-
-<script>
-
-
 (function (){
 var bz = `
   <div class="logger"></div> 
@@ -36,7 +32,3 @@ this.Log = function(Message) {
   LOGstrNumberLOG++;
 }
 Log("____Лог , Добавлен______") ;
-
-
-
-</script> 
