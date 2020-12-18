@@ -6,6 +6,7 @@ var bz = `
       font-size: 90%;
       font-weight: 900;
       color:#fff;
+      
     }
     .logger {
       position: fixed;
@@ -31,4 +32,5 @@ this.Log = function(Message) {
   LogDiv.innerHTML= "<span>"+LOGstrNumberLOG+"</span>"+" "+Message +'<br/>' + StorageLogDiv;
   LOGstrNumberLOG++;
 }
-Log("____Лог , Добавлен______") ;
+Log("<div style='color:#FFB901;'>____Лог , Добавлен______</div>") ;
+
